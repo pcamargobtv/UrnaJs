@@ -10,7 +10,7 @@ let numero = '';
 let votoBranco = true;
 let votos = [];
 
-const fim = new Audio('img/fim.mp3');
+
 const tecla = new Audio('img/tecla.mp3');
 
 function comecarEtapa(){
@@ -134,11 +134,12 @@ function confirma(){
     if (votoConfirmado){
         etapaAtual++;
         if(etapas[etapaAtual] !== undefined){
-           
+           const fim = new Audio('img/fim.mp3');
             fim.play();
             comecarEtapa();
         } else {
-            document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM!!</div>'            
+            document.querySelector('.tela').innerHTML = '<div class="aviso--gigante pisca">FIM!!</div>'       
+            const fim = new Audio('img/fim.mp3');
             fim.play();
             console.log(votos);
            
