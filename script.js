@@ -11,7 +11,7 @@ let votoBranco = true;
 let votos = [];
 
 
-const tecla = new Audio('img/tecla.mp3');
+const tecla = new Audio('img/fim.mp3');
 
 function comecarEtapa(){
     let etapa = etapas[etapaAtual];
